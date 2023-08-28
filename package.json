@@ -1,0 +1,30 @@
+{
+  "name": "button-panel",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "electron:start": "electron .",
+    "electron:build": "vite build & electron-builder build --config electron-builder.json",
+    "electron:generate-icons": "electron-icon-builder --input=./ButtonPanel.png --output=icons --flatten"
+  },
+  "dependencies": {
+    "electron-icon-builder": "^2.0.1",
+    "element-plus": "^2.3.9",
+    "sqlite3": "^5.1.6",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.4"
+  },
+  "main": "electron/main.js",
+  "author": "even",
+  "license": "ISC",
+  "description": "a button panel",
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "electron": "^25.5.0",
+    "electron-builder": "^24.6.3",
+    "vite": "^4.4.6"
+  }
+}

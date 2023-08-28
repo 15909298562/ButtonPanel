@@ -1,0 +1,23 @@
+{
+    "productName": "ButtonPanel",
+    "files": ["./electron/main.js","./electron/preload.js","./dist"],
+    "extraFiles": ["./videos", "./cvideo"], 
+    "directories": {
+        "output": "./buileder"
+    },
+    "nsis": {
+        "oneClick": false,
+        "allowElevation": true,
+        "allowToChangeInstallationDirectory": true,
+        "installerIcon": "./icons/icons/icon.ico",
+        "uninstallerIcon": "./icons/icons/icon.ico",
+        "installerHeaderIcon": "./icons/icons/icon.ico",
+        "createDesktopShortcut": true,
+        "createStartMenuShortcut": true,
+        "shortcutName": "ButtonPanel"
+    },
+    "win": { 
+        "target": "nsis", 
+        "icon": "./icons/icons/ButtonPanel256.png" 
+    }
+}
